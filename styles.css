@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: #290101;
+    color: #f8e6d6;
+    line-height: 1.6;
+  }
+  
+  header {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  h1, h2 {
+    color: #ffd966;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  a {
+    color: #ffd966;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #d9a24e;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to bottom, #290101bc, #290101f9), url('images/ember-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffd966;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .logo:hover {
+    transition: all 0.3s ease;
+    text-shadow: 0 0 15px #ffd966;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9a24e;
+    color: #1a1a1a;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffd966;
+    color: #1a1a1a;
+    box-shadow: 0 0 15px #ffd966;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    position: relative;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ffd966;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Intro Section */
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  
+  .intro-image {
+    width: 40%;
+    margin-left: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Highlights Section */
+  .highlights {
+    padding: 3rem 2rem;
+    background-color: #480303;
+    text-align: center;
+    background: linear-gradient(to bottom, #480303, #290101c1), url('images/highlight-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+    
+  }
+  
+  .card {
+    background: #721717;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 217, 102, 0.578);
+  }
+  
+   /* Tracklist Section */
+   .tracklist {
+    padding: 3rem 2rem;
+    background-color: #480303;
+    text-align: center;
+  }
+  
+  .songs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .song {
+    background: #721717;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .song:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 217, 102, 0.578);
+  }
+
+  .custom-audio {
+    width: 100%;
+    height: 50px;
+  }
+  .custom-audio::-webkit-media-controls-panel {
+    background: #d9a24e
+  } 
+
+  /* Merch Section */
+  .merch {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .merch-image {
+    max-width: 340px;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #290101;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    color: #d9a24e;
+    line-height: 0.5;
+  }
+  
+  footer p:hover {
+    color: #ffd966;
+    text-shadow: 0 0 8px #ffd966;
+  }  
